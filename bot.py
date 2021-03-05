@@ -21,7 +21,8 @@ async def on_ready():
 extensions = [
     "cogs.Aberturas",
     "cogs.Puzzles",
-    "cogs.BotInfo"
+    "cogs.BotInfo",
+    "cogs.UserInfo"
     ]
 
 if __name__ == "__main__":

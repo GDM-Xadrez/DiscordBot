@@ -1,8 +1,11 @@
 # Commands to read data from user_db.json
-
+import os
 import json
 
-with open("./user_db.json") as f:
+__location__ = os.path.realpath(
+    os.path.join(os.getcwd(), os.path.dirname(__file__)))
+
+with open(os.path.join(__location__, 'user_db.json')) as f:
     db = json.load(f)
 
 def is_user(user):
