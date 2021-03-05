@@ -36,6 +36,18 @@ class Aberturas(commands.Cog):
         await message.channel.send("https://www.youtube.com/watch?v=rmbU97iftC8")
         await message.channel.send(embed=embed)
 
+    @commands.command(name="Najdorf", help="Info sobre a Najdorf", aliases=["najdorf"])
+    async def najdorf(self, message):
+        embed = discord.Embed(
+            title="Najdorf",
+            description="Jogada de negras",
+            color=discord.Colour.gold(),
+        )
+        
+        await message.channel.send(embed=embed)
+        await message.channel.send("https://en.chessbase.com/post/daniel-king-s-power-play-show-winning-with-the-najdorf")
+        
+
 
     
 def setup(bot):
