@@ -99,5 +99,18 @@ class BotInfo(commands.Cog):
         await ctx.channel.send(embed=embed)
 
 
+    @commands.command(name="Website", help="Link do website do GDM Xadrez", aliases=["site", "website", "Site"])
+    async def website(self, ctx):
+
+        url = "https://gdm-xadrez.github.io/"
+        embed = discord.Embed(
+            title="Clica aqui para abrir o website do clube.",
+            color=discord.Colour.gold(),
+            url=url
+        )
+        
+        await ctx.channel.send(embed=embed)
+
+
 def setup(bot):
     bot.add_cog(BotInfo(bot))
